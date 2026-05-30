@@ -7,9 +7,11 @@ public class q10{
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         System.out.println("Note:- PRIME NUMBER ARE ONLY DEFINE FOR NATURAL NUMBER GREATER THEN 1.");
-        System.out.println("ENTER THE END RANGE.");
+        System.out.println("ENTER THE starting RANGE.#should be greater then 1");
+        int m= input.nextInt();
+        System.out.println("ENTER THE END RANGE.#should be greater then 1");
         int n = input.nextInt();
-        Prime(n);
+        Prime(m,n);
         
         input.close();
 
@@ -43,8 +45,8 @@ public class q10{
             return true;
         }
     }
-    static void Prime(int a){
-        for (int i=2;i<=a;i++){
+    static void Prime(int q,int a){
+        for (int i=q;i<=a;i++){
             boolean z= Is_Prime(i);
             if (z){
                 System.out.println(i);
