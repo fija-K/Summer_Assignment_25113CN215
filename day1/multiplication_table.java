@@ -2,7 +2,7 @@ package Summer_Assignment_25113CN215.day1;
 
 import java.util.Scanner;
 //Write a program to Print multiplication table of a given number.
-public class q2 {
+public class multiplication_table {
     public static void main(){
         Scanner input = new Scanner(System.in);
         System.out.println("ENTER THE VALUE OF n");

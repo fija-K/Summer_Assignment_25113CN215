@@ -1,22 +1,22 @@
 package Summer_Assignment_25113CN215.day3;
 
 import java.util.Scanner;
-//Write a program to Find LCM of two numbers.
-public class q12{
+//Write a program to Find GCD of two numbers.
+public class GCD{
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         System.out.println("ENTER THE FIRST NO(should be a natural no)");
         int n = input.nextInt();
         System.out.println("ENTER THE SECOND NO(should be a natural no)");
         int m = input.nextInt();
-        LCM(n,m);
+        GCD(n,m);
         
         input.close();
 
 
 
     }
-    static int GCD(int a,int b){
+    static void GCD(int a,int b){
         int gcd=0;
         int c;
         if (a>b){
@@ -30,12 +30,7 @@ public class q12{
                 gcd=i;
             }
         }
-        return gcd;
-    }
-    static void LCM(int a, int b){
-        int c=GCD(a,b);
-        int d=(a*b)/c;
-        System.out.println("LCM:-"+d);
+        System.out.println("GCD:- "+gcd);
     }
 
         

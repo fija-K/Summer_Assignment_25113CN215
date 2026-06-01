@@ -2,7 +2,7 @@ package Summer_Assignment_25113CN215.day4;
 
 import java.util.Scanner;
 //Write a program to Find nth Fibonacci term. 
-public class q14{
+public class nth_fibonacci_term{
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         System.out.println("ENTER THE nth term");

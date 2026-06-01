@@ -2,7 +2,7 @@ package Summer_Assignment_25113CN215.day1;
 
 import java.util.Scanner;
 //Write a program to Find factorial of a number.
-public class q3 {
+public class factorial {
     public static void main(){
         Scanner input = new Scanner(System.in);
         System.out.println("ENTER THE VALUE OF n");

@@ -2,7 +2,7 @@ package Summer_Assignment_25113CN215.day4;
 
 import java.util.Scanner;
 //Write a program to Print Armstrong numbers in a range.
-public class q16{
+public class Armstrong_no_in_range{
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         System.out.println("ENTER THE starting range");

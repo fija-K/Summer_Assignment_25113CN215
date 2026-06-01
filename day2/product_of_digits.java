@@ -1,25 +1,27 @@
-package Summer_Assignment_25113CN215.day1;
+package Summer_Assignment_25113CN215.day2;
 
 import java.util.Scanner;
-//Write a program to Count digits in a number
-public class q4 {
+//Write a program to Find product of digits.
+public class product_of_digits{
     public static void main(){
         Scanner input = new Scanner(System.in);
         System.out.println("ENTER THE VALUE OF n");
         int n = input.nextInt();
-        Count_digit(n);
+        Mult_digit(n);
         input.close();
 
 
     }
-    static void Count_digit(int a){
+    static void Mult_digit(int a){
         int d=a;
-        int b=0;
+        int b=1;
         while(!(d==0)){
+            b=b*(d%10);
             d/=10;
-            b+=1;
+            
 
         }
-        System.out.println("no of digits in "+a+" is:"+b);
+        System.out.println("-->"+b);
     }
+    
 }

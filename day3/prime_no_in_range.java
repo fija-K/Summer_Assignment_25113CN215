@@ -3,7 +3,7 @@ package Summer_Assignment_25113CN215.day3;
 import java.util.Scanner;
 //Write a program to Print prime numbers in a range.
 
-public class q10{
+public class prime_no_in_range{
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         System.out.println("Note:- PRIME NUMBER ARE ONLY DEFINE FOR NATURAL NUMBER GREATER THEN 1.");

@@ -1,7 +1,7 @@
 package Summer_Assignment_25113CN215.day1;
 import java.util.Scanner;
 //Write a program to Calculate sum of first N natural numbers.
-public class q1 {
+public class sum_of_first_n_natural_no {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         System.out.println("ENTER THE VALUE OF n");

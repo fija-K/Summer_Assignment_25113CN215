@@ -2,7 +2,7 @@ package Summer_Assignment_25113CN215.day3;
 
 import java.util.Scanner;
 //Write a program to Check whether a number is prime
-public class q9{
+public class isPrime{
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         System.out.println("Note:- PRIME NUMBER ARE ONLY DEFINE FOR NATURAL NUMBER GREATER THEN 1.");

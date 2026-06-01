@@ -1,7 +1,7 @@
 package Summer_Assignment_25113CN215.day4;
 import java.util.Scanner;
 //Write a program to Generate Fibonacci series.
-public class q13{
+public class fibonacci{
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         System.out.println("ENTER THE VALUE OF n(n should be a natural no.");

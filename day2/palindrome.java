@@ -1,13 +1,15 @@
 package Summer_Assignment_25113CN215.day2;
 
 import java.util.Scanner;
-//Write a program to Reverse a number.
-public class q6{
+//Write a program to Check whether a number is palindrome
+//A palindrome is a word, phrase, number, or 
+//sequence of symbols that reads exactly the same both forwards and backwards.
+public class palindrome{
     public static void main(){
         Scanner input = new Scanner(System.in);
         System.out.println("ENTER THE VALUE OF n");
         int n = input.nextInt();
-        Rev(n);
+        Is_Palindrome(n);
         input.close();
 
 
@@ -22,7 +24,7 @@ public class q6{
         }
         return b;
     }
-    static void Rev(int x){
+    static int Rev(int x){
         int z=x;
         int r=0;
         int y=Count_digit(x);
@@ -33,9 +35,20 @@ public class q6{
 
             
         }
-        System.out.println("REV: "+r);
+        return r;
 
         
        
     }
+    static void Is_Palindrome(int x){
+        int y=Rev(x);
+        if (y==x){
+            System.out.println("number is palindrome");
+        }
+        else{
+            System.out.println("number is not palindrome");
+        }
+        
+    }
+    
 }
