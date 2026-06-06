@@ -5,7 +5,7 @@ public class binary_to_decimal {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         System.out.print("ENTER THE BINARY NO: ");
-        int n = input.nextInt();
+        int n = input.nextInt();//taking input
         int count= Count_digit(n);
         int b=0;
         int m=n;

@@ -7,7 +7,7 @@ public class set_bits {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("ENTER THE DECIMAL NO: ");
-        int n = input.nextInt();
+        int n = input.nextInt();//taking input
         ArrayList<Integer> binaryArryList= new ArrayList<>();
         
         binaryArryList= Binary( n);
