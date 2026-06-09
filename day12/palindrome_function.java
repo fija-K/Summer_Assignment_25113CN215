@@ -1,0 +1,58 @@
+package day12;
+
+
+import java.util.Scanner;
+//Write a program to Check whether a number is palindrome
+//A palindrome is a word, phrase, number, or 
+//sequence of symbols that reads exactly the same both forwards and backwards.
+public class palindrome_function{
+    public static void main(){
+        Scanner input = new Scanner(System.in);
+        System.out.println("ENTER THE VALUE OF n");
+        int n = input.nextInt();
+        Is_Palindrome(n);//method calling
+        input.close();
+
+
+    }
+    //method for counting digit
+    static int Count_digit(int a){
+        int d=a;
+        int b=0;
+        while(!(d==0)){
+            d/=10;
+            b+=1;
+
+        }
+        return b;
+    }
+    //method for reversing
+    static int Rev(int x){
+        int z=x;
+        int r=0;
+        int y=Count_digit(x);//method calling
+        while (!(z==0)) {
+            r+=((int)Math.pow(10, (y-1)))*(z%10);
+            y--;
+            z/=10;
+
+            
+        }
+        return r;
+
+        
+       
+    }
+    //method to find palidrome
+    static void Is_Palindrome(int x){
+        int y=Rev(x);//method calling
+        if (y==x){
+            System.out.println("number is palindrome");
+        }
+        else{
+            System.out.println("number is not palindrome");
+        }
+        
+    }
+    
+}
