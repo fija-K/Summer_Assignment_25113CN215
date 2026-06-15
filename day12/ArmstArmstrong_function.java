@@ -2,7 +2,7 @@ package day12;
 
 import java.util.Scanner;
 //Write a program to Check Armstrong number. 
-public class ArmstArmstrong_functionrong{
+public class ArmstArmstrong_function{
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         System.out.println("ENTER THE no");

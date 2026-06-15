@@ -1,0 +1,41 @@
+package day12;
+
+import java.util.Scanner;
+
+public class perfectno_function {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("ENTER A POSITVE INTEGER ");
+        int num= input.nextInt();
+        perfectno(num, input);//calling function. passing num and input as parameters
+        
+        input.close();
+    }
+    //method for perfect no
+    public static void perfectno(int num,Scanner input) {
+        int sum=0;
+
+        while(num<0){
+            System.out.println("ENTER A POSITVE INTEGER");
+            num = input.nextInt();
+        }
+        for(int i=1; i<num;i++){
+            if(num%i==0){
+                sum+=i;
+            }
+
+          
+        }
+        if (sum==num){
+            System.out.println("PERFECT NO");
+        }
+        else{
+            System.out.println("NOT A PERFECT NO");
+        }
+        
+    }
+
+    
+}
+
