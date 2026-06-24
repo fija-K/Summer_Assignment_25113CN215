@@ -9,11 +9,11 @@ public class palindromestring {
         Scanner sc=new Scanner(System.in);
 
         System.out.print("Enter a string: ");
-        String str=sc.nextLine();
+        String str=sc.nextLine();//input
 
         String rev="";
         for (int i =str.length()-1;i>=0;i--) {
-            rev+=str.charAt(i);
+            rev+=str.charAt(i);//reversing string
         }
         if (str.equals(rev)) {
             System.out.println("Palindrome");

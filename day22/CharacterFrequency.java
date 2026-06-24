@@ -8,7 +8,7 @@ public class CharacterFrequency {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("enter a string: ");
-        String str = sc.nextLine();
+        String str = sc.nextLine();//inputing the string
         HashMap<Character, Integer> map = new HashMap<>();
         for (char ch:str.toCharArray()) {
            
@@ -19,7 +19,7 @@ public class CharacterFrequency {
 
         for (Map.Entry<Character,Integer> entry:map.entrySet()) {
           
-            System.out.println(entry.getKey()+" -> "+entry.getValue());
+            System.out.println(entry.getKey()+" -> "+entry.getValue());//output
         }
 
         sc.close();

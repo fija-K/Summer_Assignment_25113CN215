@@ -10,7 +10,7 @@ public class RemoveSpaces {
 
         String str = sc.nextLine();
 
-        str = str.replaceAll("\\s+", "");
+        str = str.replaceAll("\\s+", "");//replacing space with "" aka removing all spaces.
         System.out.println("final string: "+str);
         sc.close();
     }
